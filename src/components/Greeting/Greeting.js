@@ -4,27 +4,36 @@ import { useEffect, useState } from "react";
 
 const Greeting = () => {
   const [logo, setLogo] = useState("sLogo");
-  const [val, setVal] = useState("S");
+  const [pageRemoval, setPageRemoval] = useState("greet");
+  const [val, setVal] = useState("□");
 
   useEffect(() => {
     setTimeout(() => {
-      setLogo("greeting");
-      setVal("");
+      // setLogo("greeting");
+      // setVal("");
       gree();
-    }, 6000);
+    }, 7000);
   }, []);
 
   const gree = () => {
-    let arr = ["hello", "hola", "namaste"];
+    let arr = [".hello.", ".hola.", ".namaste."];
     let i = 0;
-    setInterval(() => {
+    const interval = setInterval(() => {
       setVal(arr[i]);
       i = i + 1;
-    }, 600);
+
+      if (i === 4) {
+        clearInterval(interval);
+        setPageRemoval("none");
+        setLogo("none");
+      }
+
+      console.log(i);
+    }, 350);
   };
 
   return (
-    <div className="greet">
+    <div className={pageRemoval}>
       <div className={logo}>
         <h3>{val}</h3>
       </div>

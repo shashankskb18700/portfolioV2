@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Greeting from "./Greeting/Greeting";
+import Home from "./Home/Home";
 
 const App = () => {
   const [Y, setY] = useState(0);
@@ -15,6 +16,7 @@ const App = () => {
   return (
     <div>
       <Greeting></Greeting>
+      <Home></Home>
     </div>
   );
 };
