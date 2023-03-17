@@ -17,7 +17,7 @@
   width: 100vw;
   height: 100vh;
   overflow-y: hidden;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   color: white;
 }
 /* .sLogo {
@@ -32,11 +32,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   width: 100vw;
   height: 100vh;
   /* height: 70vh; */
-  font-size: 80rem;
+  font-size: 20rem;
   /* width: 70vw; */
   /* height: fit-content;  */
   /* -webkit-font-smoothing: antialiased; */
@@ -44,7 +44,7 @@
   /* -webkit-text-stroke: 15px rgb(129, 129, 233); */
   /* color: black; */
 
-  animation: loading 14s linear;
+  animation: loading 6s linear;
   animation-fill-mode: both;
   /* width: 100vw; */
   /* height: 100vw; */
@@ -59,7 +59,7 @@
   justify-content: center;
   width: 100vw;
   height: 100vw;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
 }
 .greeting h3 {
   display: flex;
@@ -97,18 +97,6 @@
     rotate: 0deg;
     background-color: none;
     color: dodgerblue;
-    clip-path: polygon(
-      0 100%,
-      2% 100%,
-      18% 100%,
-      36% 100%,
-      50% 100%,
-      62% 100%,
-      75% 100%,
-      89% 100%,
-      98% 100%,
-      100% 100%
-    );
   }
 
   5% {
@@ -116,37 +104,13 @@
     rotate: 0deg;
     background-color: black;
     color: rgba(221, 255, 30, 0.76);
-    clip-path: polygon(
-      0 100%,
-      0 94%,
-      13% 96%,
-      26% 96%,
-      43% 93%,
-      57% 92%,
-      70% 89%,
-      84% 88%,
-      100% 92%,
-      100% 100%
-    );
   }
 
   10% {
     transform: translateY(0);
     rotate: 0deg;
-    background-color: none;
+    background-color: black;
     color: rgb(78, 4, 53);
-    clip-path: polygon(
-      0 100%,
-      0 80%,
-      100% 85%,
-      100% 81%,
-      100% 83%,
-      100% 85%,
-      68% 88%,
-      70% 85%,
-      100% 82%,
-      100% 100%
-    );
   }
 
   15% {
@@ -154,18 +118,6 @@
     rotate: 0deg;
     background-color: black;
     color: rgb(119, 24, 91);
-    clip-path: polygon(
-      0 100%,
-      0 72%,
-      12% 77%,
-      26% 81%,
-      43% 80%,
-      58% 75%,
-      73% 71%,
-      86% 68%,
-      100% 67%,
-      100% 100%
-    );
   }
 
   20% {
@@ -173,18 +125,6 @@
     rotate: 0deg;
     background-color: black;
     color: rgb(30, 203, 255);
-    clip-path: polygon(
-      0 100%,
-      0 61%,
-      13% 55%,
-      27% 52%,
-      42% 55%,
-      57% 61%,
-      74% 65%,
-      87% 64%,
-      100% 58%,
-      100% 100%
-    );
   }
 
   25% {
@@ -192,18 +132,6 @@
     rotate: 0deg;
     background-color: black;
     color: rgb(188, 255, 30);
-    clip-path: polygon(
-      0 100%,
-      0 37%,
-      9% 43%,
-      23% 47%,
-      41% 46%,
-      60% 43%,
-      72% 35%,
-      85% 31%,
-      100% 30%,
-      100% 100%
-    );
   }
 
   30% {
@@ -211,18 +139,6 @@
     rotate: 0deg;
     background-color: black;
     color: rgb(212, 116, 103);
-    clip-path: polygon(
-      0 100%,
-      0 18%,
-      15% 17%,
-      29% 18%,
-      43% 24%,
-      57% 26%,
-      73% 23%,
-      87% 19%,
-      100% 16%,
-      100% 100%
-    );
   }
 
   35% {
@@ -230,139 +146,118 @@
     rotate: 0deg;
     background-color: black;
     color: rgba(30, 143, 255, 0);
-    clip-path: polygon(
-      0 100%,
-      0 13%,
-      13% 15%,
-      27% 13%,
-      41% 10%,
-      56% 6%,
-      72% 7%,
-      82% 9%,
-      100% 16%,
-      100% 100%
-    );
   }
 
   40% {
     transform: translateY(0);
-    rotate: 45deg;
+    /* rotate: 45deg; */
     background-color: black;
-    color: white;
-    clip-path: polygon(
-      0 100%,
-      0 0,
-      13% 5%,
-      28% 6%,
-      43% 6%,
-      54% 7%,
-      70% 9%,
-      84% 8%,
-      100% 5%,
-      100% 100%
-    );
+    color: rgb(122, 50, 155);
   }
 
   43% {
+    clip-path: circle(99.8% at 50% 70%);
     transform: translateY(0);
-    rotate: 90deg;
+    /* rotate: 90deg; */
     background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    clip-path: polygon(
-      0 100%,
-      0 0,
-      9% 0,
-      26% 0,
-      41% 0,
-      52% 0,
-      67% 0,
-      82% 0,
-      100% 0,
-      100% 100%
-    );
+    color: rgb(9, 236, 111);
   }
 
   45% {
+    clip-path: circle(89.8% at 50% 50%);
     transform: translateY(0);
-    rotate: 180deg;
+    /* rotate: 180deg; */
     background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    clip-path: polygon(
-      0 100%,
-      0 0,
-      9% 0,
-      26% 0,
-      41% 0,
-      52% 0,
-      67% 0,
-      82% 0,
-      100% 0,
-      100% 100%
-    );
+    color: rgb(204, 177, 23);
   }
 
   50% {
+    clip-path: circle(79.8% at 50% 40%);
     transform: translateY(0);
-    rotate: 360deg;
+    /* rotate: 360deg; */
     background-color: rgb(0, 0, 0);
-    color: rgba(255, 255, 255, 0);
-    clip-path: polygon(
-      0 100%,
-      0 0,
-      9% 0,
-      26% 0,
-      41% 0,
-      52% 0,
-      67% 0,
-      82% 0,
-      100% 0,
-      100% 100%
-    );
+    color: rgba(204, 118, 118, 0.959);
   }
 
   60% {
+    clip-path: circle(69.8% at 49% 30%);
     transform: translateY(0);
-    background-color: white;
-    color: black;
-    rotate: 360deg;
-    font-size: 20rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 204, 255);
+    /* rotate: 360deg; */
+    /* font-size: 20rem; */
   }
   70% {
+    clip-path: circle(59.8% at 49% 25%);
     /* top: 0%; */
-    transform: translateY(0);
-    background-color: red;
-    color: black;
-    rotate: 360deg;
+    transform: translateY(0vh);
+    background-color: rgb(0, 0, 0);
+    color: rgb(157, 187, 117);
+    /* rotate: 360deg; */
   }
+  73.5% {
+    clip-path: circle(49.8% at 51% 20%);
+
+    transform: translateY(0vh);
+  }
+
+  77% {
+    clip-path: circle(39.8% at 50% 15%);
+    transform: translateY(0vh);
+  }
+
   80% {
     /* top: -40%; */
-    transform: translateY(0);
-    background-color: red;
-    color: black;
-    rotate: 360deg;
+    clip-path: circle(29.8% at 50% 10%);
+    transform: translateY(0vh);
+    background-color: rgb(0, 0, 0);
+    color: rgb(216, 172, 172);
+    /* rotate: 360deg; */
   }
+
+  83.5% {
+    clip-path: circle(19.8% at 50% 5%);
+    transform: translateY(0vh);
+  }
+  87% {
+    clip-path: circle(9.8% at 50% 3%);
+    transform: translateY(0vh);
+  }
+
   90% {
+    clip-path: circle(0.8% at 50% 0%);
     /* top: -50%; */
-    transform: translateY(-90);
-    background-color: red;
-    color: black;
-    rotate: 360deg;
+    transform: translateY(-20vh);
+    background-color: rgb(0, 0, 0);
+    color: rgb(160, 65, 65);
+    /* rotate: 360deg; */
+  }
+
+  93.5% {
+    transform: translateY(-40vh);
+  }
+
+  97% {
+    transform: translateY(-60vh);
   }
   100% {
-    /* top: -100%; */
+    /* clip-path: circle(29.3% at 50% 0); */
 
-    background-color: red;
+    /* top: -100%; */
+    transform: translateY(-100vh);
+
+    background-color: rgb(0, 0, 0);
     color: black;
-    rotate: 360deg;
+    /* rotate: 360deg; */
   }
 }
 
 .greeting {
-  font-size: 4rem;
+  /* font-size: 4rem; */
 }
 
 @media (max-width: 400px) {
   .sLogo h3 {
-    font-size: 20rem;
+    font-size: 10rem;
   }
 }

@@ -1,0 +1,15 @@
+.AppD {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+.homeApp {
+  transition: 2s;
+  /* position: relative; */
+}
+
+.greetingApp {
+  /* position: relative; */
+  /* z-index: 100; */
+}

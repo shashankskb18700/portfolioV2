@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Greeting from "./Greeting/Greeting";
 import Home from "./Home/Home";
 
+import "./App.css";
+
 const App = () => {
   const [Y, setY] = useState(0);
   const [color, setColor] = useState("black");
@@ -14,9 +16,9 @@ const App = () => {
   }, [Y]);
 
   return (
-    <div>
-      <Greeting></Greeting>
-      <Home></Home>
+    <div className="AppD">
+      <Greeting className="greetingApp"></Greeting>
+      <Home className="homeApp"></Home>
     </div>
   );
 };

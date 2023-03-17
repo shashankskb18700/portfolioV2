@@ -5,27 +5,27 @@ import { useEffect, useState } from "react";
 const Greeting = () => {
   const [logo, setLogo] = useState("sLogo");
   const [pageRemoval, setPageRemoval] = useState("greet");
-  const [val, setVal] = useState("□");
+  const [val, setVal] = useState("");
 
   useEffect(() => {
     setTimeout(() => {
-      // setLogo("greeting");
-      // setVal("");
-      gree();
-    }, 7000);
+      setPageRemoval("none");
+      setLogo("none");
+    }, 5500);
+    gree();
   }, []);
 
   const gree = () => {
-    let arr = [".hello.", ".hola.", ".namaste."];
+    let arr = [".Hello.", ".Hola.", ".नमस्ते.", ".Ciao.", ".您好.", ".Olá."];
     let i = 0;
     const interval = setInterval(() => {
       setVal(arr[i]);
       i = i + 1;
 
-      if (i === 4) {
+      if (i === 7) {
         clearInterval(interval);
-        setPageRemoval("none");
-        setLogo("none");
+        // setPageRemoval("none");
+        // setLogo("none");
       }
 
       console.log(i);

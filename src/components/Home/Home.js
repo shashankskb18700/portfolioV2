@@ -2,6 +2,9 @@ import "./Home.css";
 import { Graph } from "react-d3-graph";
 
 // graph payload (with minimalist structure)
+
+import img1 from "../../Assets/Images/Screenshot 2023-03-06 at 7.26.09 PM.png";
+import img2 from "../../Assets/Images/Screenshot 2023-03-16 at 5.47.37 PM.png";
 const data = {
   nodes: [{ id: "Harry" }, { id: "Sally" }, { id: "Alice" }],
   links: [
@@ -40,11 +43,11 @@ const Home = () => {
         <div> slider menu</div>
       </div>
       <div className="mid">
-        <h1> I am Shashank shekhar </h1>
-        <div className="skills">
-          <div>
-            <button>competitive coder </button>
-            {/* <div>
+        {/* <h1> I am Shashank shekhar </h1> */}
+        {/* <div className="skills"> */}
+        <div className="competitive">
+          <div>competitive coder</div>
+          {/* <div>
               <Graph
                 id="graph-id" // id is mandatory
                 data={data}
@@ -55,12 +58,13 @@ const Home = () => {
                 // onClickLink={onClickLink}
               />
             </div> */}
-          </div>
-
-          <div>
-            <button>Web developer</button>
-          </div>
         </div>
+
+        <div className="webD">
+          {" "}
+          <div>Web developer</div>
+        </div>
+        {/* </div> */}
       </div>
 
       <div>
