@@ -6,19 +6,30 @@ import Home from "./Home/Home";
 import "./App.css";
 
 const App = () => {
-  const [Y, setY] = useState(0);
+  const [gTiming, setGTiming] = useState(false);
   const [color, setColor] = useState("black");
 
   useEffect(() => {
-    if (Y > 100) {
-      setColor("red");
-    }
-  }, [Y]);
+    let val = 0;
+    const interv = setInterval(() => {
+      val += 0.5;
+
+      if (val == 5.5) {
+        setGTiming(true);
+        clearInterval(interv);
+      }
+    }, 500);
+  }, []);
 
   return (
     <div className="AppD">
-      <Greeting className="greetingApp"></Greeting>
-      <Home className="homeApp"></Home>
+      {gTiming ? (
+        <Home className="homeApp"></Home>
+      ) : (
+        <Greeting className="greetingApp"></Greeting>
+      )}
+      {/* <Greeting className="greetingApp"></Greeting>
+      <Home className="homeApp"></Home> */}
     </div>
   );
 };
