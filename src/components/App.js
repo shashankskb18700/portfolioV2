@@ -23,13 +23,13 @@ const App = () => {
 
   return (
     <div className="AppD">
-      {gTiming ? (
+      {/* {gTiming ? (
         <Home className="homeApp"></Home>
       ) : (
         <Greeting className="greetingApp"></Greeting>
-      )}
-      {/* <Greeting className="greetingApp"></Greeting>
-      <Home className="homeApp"></Home> */}
+      )} */}
+      <Greeting className="greetingApp"></Greeting>
+      <Home className="homeApp"></Home>
     </div>
   );
 };

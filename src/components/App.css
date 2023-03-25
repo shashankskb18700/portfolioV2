@@ -6,10 +6,11 @@
 }
 .homeApp {
   transition: 2s;
-  /* position: relative; */
+  position: absolute;
+  z-index: 5;
 }
 
 .greetingApp {
   /* position: relative; */
-  /* z-index: 100; */
+  z-index: 100;
 }
