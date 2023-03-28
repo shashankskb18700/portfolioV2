@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Greeting from "./Greeting/Greeting";
 import Home from "./Home/Home";
 
+import AppRouter from "./Router";
+
 import "./App.css";
 
 const App = () => {
@@ -14,7 +16,7 @@ const App = () => {
     const interv = setInterval(() => {
       val += 0.5;
 
-      if (val == 5.5) {
+      if (val == 4.0) {
         setGTiming(true);
         clearInterval(interv);
       }
@@ -24,12 +26,12 @@ const App = () => {
   return (
     <div className="AppD">
       {/* {gTiming ? (
-        <Home className="homeApp"></Home>
+        <AppRouter></AppRouter>
       ) : (
         <Greeting className="greetingApp"></Greeting>
       )} */}
       <Greeting className="greetingApp"></Greeting>
-      <Home className="homeApp"></Home>
+      <AppRouter></AppRouter>x{/* <Home className="homeApp"></Home> */}
     </div>
   );
 };

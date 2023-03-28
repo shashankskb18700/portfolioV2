@@ -46,7 +46,7 @@ const Greeting = () => {
     setTimeout(() => {
       setPageRemoval("none");
       setLogo("none");
-    }, 5000);
+    }, 4500);
     gree();
   }, []);
 
@@ -63,7 +63,7 @@ const Greeting = () => {
         // setPageRemoval("none");
         // setLogo("none");
       }
-    }, 350);
+    }, 300);
   };
 
   console.log("x1  " + x1);
@@ -433,12 +433,12 @@ const Title =
   width > height
     ? styled.div`
         animation-name: ${textFade};
-        animation-duration: 5s;
+        animation-duration: 4s;
         animation-timing-function: linear;
       `
     : styled.div`
         animation-name: ${textFadeMobile};
-        animation-duration: 5s;
+        animation-duration: 4s;
         animation-timing-function: linear;
       `;
 
