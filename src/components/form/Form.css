@@ -1,0 +1,106 @@
+.contact-form {
+  font-size: 5rem;
+  font-family: "Oswald";
+  font-weight: 400;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.viewer-details {
+  display: flex;
+  width: 30vw;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.regularInp {
+  height: 40%;
+  border-top: none;
+  justify-content: flex-start;
+}
+.regularInp:nth-child(2) {
+  /* background-color: red; */
+  border-bottom: none;
+}
+.viewer-details div {
+  /* height: ;: 10%; */
+}
+.viewer-details input {
+  border: none;
+  height: 100%;
+  /* border-bottom: 2px solid black; */
+}
+
+.viewer-details input:focus {
+  outline: none;
+  border: none;
+  /* border-bottom: 2px solid red; */
+}
+
+.send {
+  border: none;
+  color: white;
+
+  /* color: white; */
+  background-color: black;
+
+  /* mix-blend-mode: darken; */
+  margin-top: 1em;
+  padding: 0.3em;
+  border: 0.0001em solid transparent;
+  border-radius: 0.2em;
+  height: fit-content;
+}
+.send:hover {
+  transition: all 0.6s;
+  background: linear-gradient(215deg, white 50%, black 50%);
+  /* color: rgb(255, 255, 255); */
+  color: wheat;
+  mix-blend-mode: exclusion;
+  border: 0.0001em solid black;
+  /* background-blend-mode: difference; */
+  /* filter: invert(10%); */
+}
+
+textarea {
+  overflow: auto;
+  border: none;
+  writing-mode: horizontal-tb !important;
+  -webkit-rtl-ordering: logical;
+  column-count: initial !important;
+  resize: none;
+}
+.viewer-details textarea {
+  height: 80%;
+  border-bottom: none;
+  justify-content: flex-start;
+}
+.textarea {
+  justify-content: flex-start;
+}
+label {
+  margin-right: 1em;
+}
+
+textarea:focus {
+  outline: none;
+}
+.toast {
+  font-size: 7rem;
+}
+
+@media (max-width: 550px) {
+  .contact-form {
+    width: 100vw;
+  }
+  .viewer-details {
+    width: 90vw;
+  }
+}

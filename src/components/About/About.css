@@ -1,0 +1,110 @@
+.about {
+  width: 100vw;
+  font-size: 10rem;
+  font-family: "Oswald";
+}
+
+.i-intro {
+  font-size: 1.7rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 30%;
+  line-height: 1.7em;
+
+  /* position: absolute; */
+  width: 100vw;
+  height: 150vh;
+}
+
+.i-skills {
+  width: 100vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  height: 250vh;
+}
+
+.front-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 70vh;
+}
+.i-skills-icon {
+  /* width: 30%; */
+  /* height: 20vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.i-skills-details {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  /* color: red; */
+}
+.back-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 70vh;
+}
+.deployment {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 70vh;
+}
+
+i {
+  /* width: 2em; */
+  height: 2.5em;
+  /* font-weight: 400; */
+  /* padding-right: 2em; */
+  font-size: 2.5rem;
+}
+
+tr {
+  padding-right: 2em;
+}
+
+.i-skills-icons {
+  font-size: 2.5rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.heroku {
+  /* padding-top: 3%; */
+  /* transform: scale(0.4); */
+}
+.herok-u {
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+/* .form {
+  width: 100vw;
+  height: 100vh;
+} */
+
+.form {
+  display: flex;
+  /* align-items: center; */
+  font-size: 3rem;
+  font-weight: 100;
+  width: 80vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 80vh;
+}
+.form-text {
+  width: 50%;
+}
+.contact-form {
+  width: 50%;
+}

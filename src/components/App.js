@@ -30,8 +30,9 @@ const App = () => {
       ) : (
         <Greeting className="greetingApp"></Greeting>
       )} */}
-      <Greeting className="greetingApp"></Greeting>
-      <AppRouter></AppRouter>x{/* <Home className="homeApp"></Home> */}
+      {/* <Greeting className="greetingApp"></Greeting> */}
+      <AppRouter></AppRouter>
+      {/* <Home className="homeApp"></Home> */}
     </div>
   );
 };

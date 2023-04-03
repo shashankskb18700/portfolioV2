@@ -1,0 +1,147 @@
+.WebDeveloper {
+  color: white;
+  width: 100vw;
+  background-color: black;
+  font-family: "Oswald";
+  overflow: auto;
+}
+
+.web-heading {
+  font-size: 17rem;
+  width: 100vw;
+  height: 200vh;
+  display: flex;
+  letter-spacing: 4px;
+  /* position: absolute; */
+
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 0.3em;
+  /* font-weight: 0; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  line-height: 80%;
+  /* background: url("../../Assets/Images/algorithms.png"); */
+
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  color: red;
+  mix-blend-mode: difference;
+  filter: invert(1);
+  -webkit-text-stroke: red;
+
+  /* background-size: 300%; */
+  /* background-position: left; */
+  /* background-clip: text; */
+  /* color: transparent; */
+  /* text-shadow: red; */
+  /* animation: cc-movement 13s infinite; */
+}
+.web-video {
+  position: aboslute;
+  width: 60vw;
+  height: 60vh;
+
+  /* border-radius: 3em; */
+  margin-top: 0.8em;
+  outline: rgb(89, 0, 255);
+  /* z-index: 5; */
+  /* position: absolute; */
+  z-index: -5;
+  /* width: 50vw; */
+  /* margin-top: 1em; */
+  filter: invert(1);
+}
+
+.web-heading h1 {
+  background: url("../../Assets/Images/fend.png");
+
+  background-position: left;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  width: fit-content;
+  height: fit-content;
+  background-size: contain;
+  /* animation: cc-movement 13s infinite; */
+  /* -webkit-text-fill-color: white; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  transform: scale(1, 1.3);
+}
+
+/* @keyframes cc-movement {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: bottom;
+  }
+} */
+.web-intro {
+  /* width: 80vw; */
+  text-align: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 200vh;
+  font-size: 2.2rem;
+  font-weight: 200;
+  line-height: 1.9em;
+  transition: all 0.6s;
+}
+
+.works {
+  width: 100vw;
+  height: 100vh;
+  font-size: 15rem;
+}
+
+.websubtext {
+  font-size: 4rem;
+  transition: all 0.7s ease-out 0s;
+  opacity: 0.6;
+  font-family: "Dancing script";
+
+  /* left: -2%; */
+}
+
+.http {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+.json {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+.api {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+}
+
+.frontend {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.backend {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+}
+.seo {
+  position: absolute;
+  top: 35%;
+  left: 70%;
+}
+
+.testing {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}

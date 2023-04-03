@@ -1,0 +1,59 @@
+.name {
+  background: linear-gradient(
+    90deg,
+    rgb(146, 142, 209) 0%,
+    rgba(255, 0, 85, 0.921) 35%,
+    rgba(0, 212, 255, 1) 100%,
+    rgb(0, 4, 255) 100%,
+    rgb(0, 255, 55) 100%,
+    rgb(149, 164, 167) 100%
+  );
+  background-size: 200%;
+  background-clip: text;
+  color: transparent;
+  animation: bg-animation 6s infinite;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  /*75% {
+    background-position: top;
+  } */
+
+  100% {
+    background-position: left;
+  }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* color: white; */
+  mix-blend-mode: difference;
+
+  width: 100vw;
+  height: 4em;
+  font-size: 3rem;
+  color: red;
+
+  padding-left: 8%;
+  padding-right: 10%;
+  filter: invert(1);
+}
+
+.links {
+  width: 50vw;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}

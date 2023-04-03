@@ -14,14 +14,15 @@ import { ReactComponent as React } from "../../Assets/svg/icons8-react.svg";
 import { ReactComponent as Git } from "../../Assets/svg/icons8-github.svg";
 
 import { ReactComponent as Twitter } from "../../Assets/svg/twitter.svg";
+
+import Header from "./../header/Header";
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div className="Home">
       {/* <div className="and"> &</div> */}
-      <div className="top">
-        <div className="name"> Shashank shekhar.</div>
-        <div> slider menu</div>
-      </div>
+      <Header></Header>
       <div className="mid">
         {/* <h1> I am Shashank shekhar </h1> */}
         {/* <div className="skills"> */}
@@ -36,8 +37,9 @@ const Home = () => {
           <React className="React glow"></React>
 
           <Git className="Git glow"></Git>
-
-          <div className="cc">Competitive coder</div>
+          <Link to="/cc">
+            <div className="cc">Competitive coder</div>
+          </Link>
           {/* <div>
               <Graph
                 id="graph-id" // id is mandatory
@@ -50,10 +52,12 @@ const Home = () => {
               />
             </div> */}
         </div>
-
+        =
         <div className="webD">
           {" "}
-          <div className="wb">Web developer</div>
+          <div className="wb">
+            <Link to="/webD">Web developer </Link>
+          </div>
         </div>
         {/* </div> */}
       </div>

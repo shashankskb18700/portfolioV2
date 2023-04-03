@@ -2,6 +2,9 @@ import "./Competitive.css";
 
 import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import Header from "./../header/Header";
+
+import Video from "./../../Assets/video/cc3.mp4";
 
 // let scrll = 0;
 // window.addEventListener("scroll", () => {
@@ -19,6 +22,8 @@ const Competative = () => {
 
   return (
     <div className="competitiv" onScroll={() => console.log()}>
+      <Header></Header>
+
       <div
         className="subtext bs"
         style={{ transform: `translate3d(0,-${scrolled}px, 0)` }}
@@ -27,7 +32,7 @@ const Competative = () => {
       </div>
       <div
         className="subtext dp"
-        style={{ transform: `translate3d(0,-${scrolled - 150}px, 0)` }}
+        style={{ transform: `translate3d(0,-${scrolled - 350}px, 0)` }}
       >
         {" "}
         DP{" "}
@@ -48,7 +53,7 @@ const Competative = () => {
 
       <div
         className="subtext math"
-        style={{ transform: `translate3d(0,-${scrolled - 280}px, 0)` }}
+        style={{ transform: `translate3d(0,-${scrolled}px, 0)` }}
       >
         Maths{" "}
       </div>
@@ -69,7 +74,17 @@ const Competative = () => {
 
       <div className="cc-heading">
         {" "}
-        <h1>COMPETITIVE CODER </h1>
+        <h1 className="cc-bold">COMPETITIVE CODER </h1>
+        <video
+          playsInline
+          muted
+          autostart
+          autoPlay
+          loop
+          src={Video}
+          type="video/mp4"
+          className="cc-video"
+        />
       </div>
       <div className="cc-intro">
         {" "}
