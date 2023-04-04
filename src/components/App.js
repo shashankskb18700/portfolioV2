@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Greeting from "./Greeting/Greeting";
 import Home from "./Home/Home";
+import GreetingStyled from "./Greeting/GreetingStyled";
 
 import AppRouter from "./Router";
 
@@ -13,14 +14,18 @@ const App = () => {
 
   useEffect(() => {
     let val = 0;
-    const interv = setInterval(() => {
-      val += 0.5;
+    // const interv = setInterval(() => {
+    //   val += 0.5;
 
-      if (val == 4.0) {
-        setGTiming(true);
-        clearInterval(interv);
-      }
-    }, 500);
+    //   if (val == 4.0) {
+    //     setGTiming(true);
+    //     clearInterval(interv);
+    //   }
+    // }, 500);
+
+    setTimeout(() => {
+      setGTiming(true);
+    }, 5000);
   }, []);
 
   return (
@@ -30,7 +35,14 @@ const App = () => {
       ) : (
         <Greeting className="greetingApp"></Greeting>
       )} */}
-      {/* <Greeting className="greetingApp"></Greeting> */}
+      {/* {gTiming == false ? (
+        <Greeting className="greetingApp"></Greeting>
+      ) : (
+        <GreetingStyled></GreetingStyled>
+      )} */}
+
+      <Greeting className="greetingApp"></Greeting>
+
       <AppRouter></AppRouter>
       {/* <Home className="homeApp"></Home> */}
     </div>

@@ -4,19 +4,26 @@ import Header from "../header/Header";
 import img1 from "./../../Assets/Images/project1ss.png";
 import img2 from "./../../Assets/Images/project2ss.png";
 
+import GreetingStyled from "./../Greeting/GreetingStyled";
+
 const Work = () => {
   return (
     <div className="recent-work">
-      <Header></Header>
-      My recent works
-      <div className="projects">
-        <div className="project">
-          <img src={img1} className="img"></img>
-          <h3>Reedemer</h3>
-        </div>
-        <div className="project">
-          <img src={img2} className="img"></img>
-          <h3>Kiriena</h3>
+      <GreetingStyled className="gsst" pageName={"Work"}></GreetingStyled>
+      <div className="recent-w">
+        <Header></Header>
+        <div className="projects-section">
+          My recent works
+          <div className="projects">
+            <div className="project">
+              <img src={img1} className="img"></img>
+              <h3>Reedemer</h3>
+            </div>
+            <div className="project">
+              <img src={img2} className="img"></img>
+              <h3>Kiriena</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>

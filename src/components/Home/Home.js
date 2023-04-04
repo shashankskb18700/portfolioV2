@@ -52,7 +52,7 @@ const Home = () => {
               />
             </div> */}
         </div>
-        =
+
         <div className="webD">
           {" "}
           <div className="wb">
