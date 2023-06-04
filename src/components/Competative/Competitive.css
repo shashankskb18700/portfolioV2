@@ -96,7 +96,7 @@
   text-align: center;
   padding-left: 10vw;
   padding-right: 10vw;
-  height: 200vh;
+  height: 150vh;
   font-size: 2.2rem;
   font-weight: 200;
   line-height: 1.9em;
@@ -123,11 +123,11 @@
 .bs {
   position: absolute;
   left: 10%;
-  top: 20%;
+  top: 25%;
 }
 .dp {
   position: absolute;
-  top: 21%;
+  top: 23%;
   left: 50%;
 }
 .tc {
@@ -157,4 +157,55 @@
   position: absolute;
   top: 45%;
   left: 40%;
+}
+
+.cc-achivement {
+  width: 100vw;
+
+  font-size: 8rem;
+
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.cc-ach-heading {
+  width: 100vw;
+  font-size: 4rem;
+  /* text-align: center; */
+}
+.cc-ach {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 550px) {
+  .cc-heading {
+    font-size: 10rem;
+    margin-top: 0.8em;
+    height: 180vh;
+  }
+  .cc-video {
+    width: 90vw;
+    margin-top: 0;
+  }
+  .tc {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+  }
+  .chinese-r {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+  }
+  .cc-intro {
+    font-size: 2rem;
+  }
+  .cc-ach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cc-ach-heading {
+    text-align: center;
+  }
 }

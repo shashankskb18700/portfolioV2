@@ -4,8 +4,15 @@ import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import Header from "./../header/Header";
 
-import Video from "./../../Assets/video/cc3.mp4";
+import Video from "./../../Assets/video/cc3compresed.mp4";
 
+import RatingCard from "./RatingCard/RatingsCard";
+
+import { ReactComponent as Codechef } from "../../Assets/svg/codechef.svg";
+
+import { ReactComponent as CodeForces } from "../../Assets/svg/code-forces.svg";
+
+import { ReactComponent as HackerRank } from "../../Assets/svg/hackerrank.svg";
 // let scrll = 0;
 // window.addEventListener("scroll", () => {
 //   scrll = window.screenY;
@@ -101,7 +108,29 @@ const Competative = () => {
         expand my knowledge, and I am excited to see what new challenges the
         future holds.
       </div>
-      <div className="cc-achivement">rating section</div>
+      <div className="cc-achivement">
+        <div className="cc-ach-heading"> Rating and rankings</div>
+        <div className="cc-ach">
+          <RatingCard
+            Svg={Codechef}
+            rating={"2 ⭐️"}
+            platform={"codechef"}
+            to={"https://www.codechef.com/users/shashank18700"}
+          ></RatingCard>
+          <RatingCard
+            Svg={CodeForces}
+            rating={"grey coder"}
+            platform={"codeforces"}
+            to={"https://codeforces.com/profile/shashankskb18700"}
+          ></RatingCard>
+          <RatingCard
+            Svg={HackerRank}
+            rating={"3 ⭐"}
+            platform={"hackerrank"}
+            to={"https://www.hackerrank.com/shashankskb18700"}
+          ></RatingCard>
+        </div>
+      </div>
     </div>
   );
 };

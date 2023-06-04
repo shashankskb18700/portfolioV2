@@ -49,6 +49,11 @@
   height: 15vh;
   font-size: 4rem;
 }
+.cont-heading {
+  /* width: 10em; */
+  /* border-radius: 2em; */
+  font-weight: 400;
+}
 
 @media (max-width: 550px) {
   .contact-mid {

@@ -47,7 +47,7 @@ const GreetingStyled = ({ pageName }) => {
       setPageRemoval("none");
       setLogo("none");
       setVal("");
-    }, 2500);
+    }, 1000);
   }, []);
 
   // const gree = () => {
@@ -446,12 +446,12 @@ const Title =
   width > height
     ? styled.div`
         animation-name: ${textFade};
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-timing-function: linear;
       `
     : styled.div`
         animation-name: ${textFadeMobile};
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-timing-function: linear;
       `;
 

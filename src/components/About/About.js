@@ -1,8 +1,13 @@
 import "./About.css";
 import { useState, useEffect } from "react";
+
 import { ReactComponent as Heroku } from "./../../Assets/svg/heroku-icon.svg";
+
+import img1 from "./../../Assets/Images/blackand white.png";
+
 import Header from "./../header/Header";
 import GreetingStyled from "./../Greeting/GreetingStyled";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const [scrol, setScroll] = useState("a-about");
@@ -10,7 +15,7 @@ const About = () => {
   useEffect(() => {
     setTimeout(() => {
       setScroll("about");
-    }, 3000);
+    }, 1000);
   }, []);
   return (
     <div className={scrol}>
@@ -18,18 +23,32 @@ const About = () => {
       <div className="abouts">
         <Header></Header>
         <div className="i-intro">
-          {" "}
-          I specialize in creating dynamic, user-friendly websites that meet the
-          needs of businesses and organizations. I have expertise in multiple
-          programming languages, including HTML, CSS, JavaScript, and PHP, and
-          am proficient in using popular web development frameworks such as
-          React, Angular, and Vue.js. I am skilled in developing responsive web
-          designs that optimize for mobile and desktop platforms. I also have
-          experience integrating various web services and APIs, such as payment
-          gateways and social media platforms, to enhance website functionality.
-          Finally, I am committed to staying up-to-date with the latest web
-          development trends and standards to ensure that the websites I develop
-          are secure, accessible, and user-friendly."
+          <div
+            className="img1"
+            style={
+              {
+                // backgroundImage: `linear-gradient( rgb(255, 255, 255, 0), rgb(255 ,255, 255) ), url(https://i.ibb.co/M1mfdkJ/blackand-white.png)`,
+                // backgroundColor: "rgb(128 128 128)",
+                // backgroundRepeat: "no-repeat",
+                // backgroundPosition: "centre",
+                // backgroundSize: "100vh 66vh",
+              }
+            }
+          ></div>
+          <div className="about-me">
+            I specialize in creating dynamic, user-friendly websites that meet
+            the needs of businesses and organizations. I have expertise in
+            multiple programming languages, including HTML, CSS, JavaScript, and
+            PHP, and am proficient in using popular web development frameworks
+            such as React, Angular, and Vue.js. I am skilled in developing
+            responsive web designs that optimize for mobile and desktop
+            platforms. I also have experience integrating various web services
+            and APIs, such as payment gateways and social media platforms, to
+            enhance website functionality. Finally, I am committed to staying
+            up-to-date with the latest web development trends and standards to
+            ensure that the websites I develop are secure, accessible, and
+            user-friendly."
+          </div>
         </div>
 
         <div className="i-skills">
@@ -96,7 +115,12 @@ const About = () => {
                   </tr>
                 </td>
               </div>
-              <div className="i-skills-image">image</div>
+              <div className="i-skills-image skills-f">
+                <i
+                  className="fa-solid fa-laptop-code fa-2xl"
+                  style={{ color: "#7211ef" }}
+                ></i>
+              </div>
             </div>
           </div>
 
@@ -147,7 +171,12 @@ const About = () => {
                   </tr>
                 </td>
               </div>
-              <div className="i-skills-image">image</div>
+              <div className="i-skills-image skills-b">
+                <i
+                  class="fa-solid fa-server fa-2xl"
+                  style={{ color: "#9bf57a", width: "100%" }}
+                ></i>
+              </div>
             </div>
           </div>
 
@@ -183,17 +212,22 @@ const About = () => {
                   </tr>
                 </td>
               </div>
-              <div className="i-skills-image">image</div>
+              <div className="i-skills-image skills-d">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="form">
-          <div width="form-text">
+          <div className="form-text">
             If you know of any job opportunities that might be a good match for
             my skills and experience, I would love to hear about them.
           </div>
-          <div className="contact-form"></div>
+          <Link className="contact-formm" to="/contact">
+            {" "}
+            Lets get connected !
+          </Link>
         </div>
       </div>
     </div>

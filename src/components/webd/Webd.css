@@ -85,7 +85,7 @@
   text-align: center;
   padding-left: 10vw;
   padding-right: 10vw;
-  height: 200vh;
+  height: 140vh;
   font-size: 2.2rem;
   font-weight: 200;
   line-height: 1.9em;
@@ -94,8 +94,13 @@
 
 .works {
   width: 100vw;
-  height: 100vh;
-  font-size: 15rem;
+  height: 80vh;
+  font-size: 7rem;
+  font-family: "Dancing script";
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .websubtext {
@@ -110,11 +115,11 @@
 .http {
   position: absolute;
   left: 10%;
-  top: 20%;
+  top: 30%;
 }
 .json {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
 }
 .api {
@@ -144,4 +149,30 @@
   position: absolute;
   top: 45%;
   left: 40%;
+}
+
+@media (max-width: 550px) {
+  .web-heading {
+    font-size: 10rem;
+  }
+  .web-video {
+    width: 90vw;
+    margin-top: 0;
+  }
+  .json {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+  }
+  .seo {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+  .web-intro {
+    font-size: 2rem;
+  }
+  .testing {
+    top: 39%;
+  }
 }

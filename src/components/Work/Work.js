@@ -5,6 +5,7 @@ import img1 from "./../../Assets/Images/project1ss.png";
 import img2 from "./../../Assets/Images/project2ss.png";
 
 import GreetingStyled from "./../Greeting/GreetingStyled";
+import { Link } from "react-router-dom";
 
 const Work = () => {
   return (
@@ -17,11 +18,23 @@ const Work = () => {
           <div className="projects">
             <div className="project">
               <img src={img1} className="img"></img>
-              <h3>Reedemer</h3>
+              <Link
+                to={"https://redeemer-1a3d9.web.app/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>Reedemer</h3>
+              </Link>
             </div>
             <div className="project">
               <img src={img2} className="img"></img>
-              <h3>Kiriena</h3>
+              <Link
+                to={"https://kireinanime.web.app/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>Kiriena</h3>
+              </Link>
             </div>
           </div>
         </div>

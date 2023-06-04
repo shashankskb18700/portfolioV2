@@ -22,28 +22,31 @@ const App = () => {
     //     clearInterval(interv);
     //   }
     // }, 500);
+    if (document.URL !== "http://localhost:3000/") {
+      setGTiming(true);
+    }
 
     setTimeout(() => {
       setGTiming(true);
-    }, 5000);
+    }, 4000);
   }, []);
 
   return (
     <div className="AppD">
-      {/* {gTiming ? (
+      {gTiming ? (
         <AppRouter></AppRouter>
       ) : (
         <Greeting className="greetingApp"></Greeting>
-      )} */}
+      )}
       {/* {gTiming == false ? (
         <Greeting className="greetingApp"></Greeting>
       ) : (
         <GreetingStyled></GreetingStyled>
       )} */}
 
-      <Greeting className="greetingApp"></Greeting>
+      {/* <Greeting className="greetingApp"></Greeting>
 
-      <AppRouter></AppRouter>
+      <AppRouter></AppRouter> */}
       {/* <Home className="homeApp"></Home> */}
     </div>
   );

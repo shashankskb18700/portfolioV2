@@ -35,9 +35,58 @@
   padding-top: 30%;
   line-height: 1.7em;
 
+  /* background: url("../../Assets/Images/My\ project.png"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   /* position: absolute; */
   width: 100vw;
   height: 150vh;
+}
+.about-me {
+  margin-top: 3em;
+  font-size: 1.7rem;
+  line-height: 2em;
+  color: rgb(0, 0, 0);
+  /* -webkit-text-stroke: 1.4px rgb(58, 209, 12); */
+  /* fill: rgb(214, 21, 21); */
+  /* filter: invert(1); */
+  /* mix-blend-mode: difference; */
+  /* background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgba(255, 0, 85, 0.921) 35%,
+    rgba(0, 212, 255, 1) 100%,
+    rgb(0, 4, 255) 100%,
+    rgb(0, 255, 55) 100%,
+    rgb(0, 207, 248) 100%
+  );
+  mix-blend-mode: difference;
+  background-size: 200%;
+  background-clip: text;
+  color: transparent; */
+}
+.img1 {
+  /* width: 70em;
+  z-index: -19; */
+  width: 60vw;
+  height: 70vh;
+  position: absolute;
+
+  background-image: linear-gradient(
+      rgb(255, 255, 255, 0) 70%,
+      rgb(255, 255, 255)
+    ),
+    url("../../Assets/Images/proper1-min.png");
+  background-size: 80%;
+
+  background-repeat: no-repeat;
+
+  top: 5%;
+  /* background-image: linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255)),
+    url("../../Assets/Images/blackand\ white.png"); */
+  left: 23%;
+  z-index: -4;
 }
 
 .i-skills {
@@ -65,10 +114,32 @@
 .i-skills-details {
   display: flex;
   width: 100%;
+  height: 20vh;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   /* color: red; */
+}
+
+.i-skills-image {
+  display: flex;
+  position: absolute;
+  /* top: 10%; */
+  left: 70%;
+  transform: scale(4);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.skills-f {
+  top: 38%;
+  height: 20%;
+}
+.skills-b {
+  top: 12%;
+}
+.skills-d {
+  top: 22.5%;
 }
 .back-end {
   display: flex;
@@ -120,16 +191,84 @@ tr {
 .form {
   display: flex;
   /* align-items: center; */
+  /* flex-direction: column; */
+  justify-content: space-between;
   font-size: 3rem;
   font-weight: 100;
   width: 80vw;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  /* padding-left: 10vw; */
+  /* padding-right: 10vw; */
+  margin-left: 10vw;
+  margin-right: 10vw;
   height: 80vh;
 }
 .form-text {
-  width: 50%;
+  width: 30%;
+  /* height: 80vh; */
 }
-.contact-form {
-  width: 50%;
+.contact-formm {
+  width: 40%;
+  font-family: "Dancing script";
+  font-size: 10rem;
+  /* position: absolute; */
+}
+
+@media (max-width: 500px) {
+  .about-me {
+    font-size: 1.2rem;
+  }
+  .img1 {
+    width: 80vw;
+    height: 23vh;
+    left: 13%;
+    top: 5%;
+  }
+  .i-intro {
+    margin-top: 3vh;
+    height: 100vw;
+    text-align: center;
+  }
+  .form {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .form-text {
+    width: 100%;
+  }
+  .contact-formm {
+    font-size: 6rem;
+    width: 100%;
+  }
+
+  .skills-d {
+    top: 22.5%;
+  }
+
+  .i-skills {
+    height: 200vh;
+  }
+  .i-skills-image {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  td {
+    display: flex;
+    /* align-items: center; */
+  }
+  tr {
+    align-items: center;
+  }
+
+  .i-skills {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .i-skills-details {
+    /* width: 90%; */
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

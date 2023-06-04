@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 
 import "./Webd.css";
-import Video from "./../../Assets/video/webdev2.mp4";
+import Video from "./../../Assets/video/webdev-2.mp4";
 import Header from "./../header/Header";
+import { Link } from "react-router-dom";
 
 const Webd = () => {
   const [scrolled, setScrolled] = useState(0);
@@ -44,21 +45,21 @@ const Webd = () => {
 
       <div
         className="websubtext backend"
-        style={{ transform: `translate3d(0,-${scrolled - 280}px, 0)` }}
+        style={{ transform: `translate3d(0,-${scrolled}px, 0)` }}
       >
         backend{" "}
       </div>
 
       <div
         className="websubtext seo"
-        style={{ transform: `translate3d(0,-${scrolled - 210}px, 0)` }}
+        style={{ transform: `translate3d(0,-${scrolled - 300}px, 0)` }}
       >
         SEO{" "}
       </div>
 
       <div
         className="websubtext testing"
-        style={{ transform: `translate3d(0,-${scrolled - 170}px, 0)` }}
+        style={{ transform: `translate3d(0,-${scrolled - 40}px, 0)` }}
       >
         Testing & maintenance{" "}
       </div>
@@ -93,7 +94,9 @@ const Webd = () => {
         every website has the potential to make a real impact, and I am excited
         to be a part of this dynamic and constantly evolving field.
       </div>
-      <div className="works">rating section</div>
+      <Link className="works" to="/work">
+        Check out my recent works
+      </Link>
     </div>
   );
 };
