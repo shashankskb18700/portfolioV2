@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@600&family=Shadows+Into+Light&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +51,7 @@
   animation-fill-mode: both;
   /* width: 100vw; */
   /* height: 100vw; */
-  font-family: "Dancing script";
+  font-family: "Poppins";
   /* font-family: "Oswald"; */
   position: relative;
 }
@@ -323,9 +325,9 @@
   /* font-size: 4rem; */
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .sLogo h3 {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 }
 

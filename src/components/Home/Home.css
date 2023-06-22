@@ -8,6 +8,7 @@
 
 .Home {
   height: 100vh;
+
   font-size: 5.5rem;
   font-family: "Oswald";
   font-weight: 400;
@@ -383,6 +384,9 @@ svg {
 }
 
 @media (min-width: 700px) and (max-width: 950px) {
+  /* .Home {
+    min-height: -webkit-fill-available;
+  } */
   .HeapSort {
     transform: scale(1.7);
   }
@@ -419,6 +423,9 @@ svg {
 }
 
 @media (max-width: 550px), (max-height: 500px) {
+  .Home {
+    max-height: -webkit-fill-available;
+  }
   .competitive {
     width: 100%;
   }
@@ -505,6 +512,9 @@ svg {
     mix-blend-mode: difference;
     transform: scale(1);
     /* left: -80%; */
+  }
+  .insta {
+    width: 2em;
   }
 
   .Git {

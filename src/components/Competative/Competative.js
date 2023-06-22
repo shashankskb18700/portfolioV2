@@ -35,7 +35,7 @@ const Competative = () => {
         className="subtext bs"
         style={{ transform: `translate3d(0,-${scrolled}px, 0)` }}
       >
-        bianry search{" "}
+        Bianry Search{" "}
       </div>
       <div
         className="subtext dp"
@@ -49,13 +49,20 @@ const Competative = () => {
         className="subtext tc"
         style={{ transform: `translate3d(0,-${scrolled - 100}px, 0)` }}
       >
-        Time complexity{" "}
+        Time Complexity{" "}
       </div>
       <div
         className="subtext sc"
-        style={{ transform: `translate3d(0,-${scrolled - 100}px, 0)` }}
+        style={{ transform: `translate3d(0,-${scrolled - 140}px, 0)` }}
       >
-        space complexity{" "}
+        Space Complexity{" "}
+      </div>
+
+      <div
+        className="subtext sc"
+        style={{ transform: `translate3d(0,-${scrolled - 20}px, 0)` }}
+      >
+        Recursion{" "}
       </div>
 
       <div
@@ -69,7 +76,7 @@ const Competative = () => {
         className="subtext chinese-r"
         style={{ transform: `translate3d(0,-${scrolled - 210}px, 0)` }}
       >
-        Chinese remainder theorem{" "}
+        Chinese Remainder Theorem{" "}
       </div>
 
       <div

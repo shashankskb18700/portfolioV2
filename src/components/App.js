@@ -22,7 +22,12 @@ const App = () => {
     //     clearInterval(interv);
     //   }
     // }, 500);
-    if (document.URL !== "http://localhost:3000/") {
+    let url = document.URL;
+    // if (url !== "http://localhost:3000/") {
+    //   setGTiming(true);
+    // }
+
+    if (document.URL !== "https://shashank-shekhar.netlify.app/") {
       setGTiming(true);
     }
 

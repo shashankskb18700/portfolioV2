@@ -36,18 +36,20 @@ const About = () => {
             }
           ></div>
           <div className="about-me">
-            I specialize in creating dynamic, user-friendly websites that meet
-            the needs of businesses and organizations. I have expertise in
-            multiple programming languages, including HTML, CSS, JavaScript, and
-            PHP, and am proficient in using popular web development frameworks
-            such as React, Angular, and Vue.js. I am skilled in developing
-            responsive web designs that optimize for mobile and desktop
-            platforms. I also have experience integrating various web services
-            and APIs, such as payment gateways and social media platforms, to
-            enhance website functionality. Finally, I am committed to staying
-            up-to-date with the latest web development trends and standards to
-            ensure that the websites I develop are secure, accessible, and
-            user-friendly."
+            I am Shashank Shekhar, a 4th year student at Chandigarh University.
+            I'm pursuing 'Bachelor of Engineering in Computer Science (With
+            specialization in Artificial Intelligenge and Machine Learning)'. I
+            specialize in creating dynamic, user-friendly websites that meet the
+            needs of businesses and organizations. I have expertise in multiple
+            programming languages, including HTML, CSS, JavaScript, and i am
+            proficient in using popular web development frameworks such as
+            React. I am skilled in developing responsive web designs that
+            optimize for mobile and desktop platforms. I also have experience
+            integrating various web services and APIs, such as payment gateways
+            and social media platforms, to enhance website functionality.
+            Finally, I am committed to staying up-to-date with the latest web
+            development trends and standards to ensure that the websites I
+            develop are secure, accessible, and user-friendly."
           </div>
         </div>
 

@@ -44,7 +44,7 @@ export const Form = () => {
         <label>Message</label>
         <textarea name="message" rows="3" />
       </div>
-      <input type="submit" value="send" className="send" onClick={notify} />
+      <input type="submit" value="Send" className="send" onClick={notify} />
 
       <ToastContainer className="toast" />
     </form>

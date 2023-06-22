@@ -20,7 +20,7 @@ const Webd = () => {
         className="websubtext http"
         style={{ transform: `translate3d(0,-${scrolled}px, 0)` }}
       >
-        http
+        Http
       </div>
       <div
         className="websubtext json"
@@ -40,14 +40,14 @@ const Webd = () => {
         className="websubtext frontend"
         style={{ transform: `translate3d(0,-${scrolled - 100}px, 0)` }}
       >
-        frontend{" "}
+        Frontend{" "}
       </div>
 
       <div
         className="websubtext backend"
         style={{ transform: `translate3d(0,-${scrolled}px, 0)` }}
       >
-        backend{" "}
+        Backend{" "}
       </div>
 
       <div
@@ -61,12 +61,12 @@ const Webd = () => {
         className="websubtext testing"
         style={{ transform: `translate3d(0,-${scrolled - 40}px, 0)` }}
       >
-        Testing & maintenance{" "}
+        Testing & Maintenance{" "}
       </div>
 
       <div className="web-heading">
         {" "}
-        <h1>Web developer </h1>
+        <h1>Web Developer </h1>
         <video
           playsInline
           muted

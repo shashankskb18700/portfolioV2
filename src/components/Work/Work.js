@@ -1,5 +1,6 @@
 import "./Work.css";
 import Header from "../header/Header";
+import { useState, useEffect } from "react";
 
 import img1 from "./../../Assets/Images/project1ss.png";
 import img2 from "./../../Assets/Images/project2ss.png";
@@ -8,9 +9,16 @@ import GreetingStyled from "./../Greeting/GreetingStyled";
 import { Link } from "react-router-dom";
 
 const Work = () => {
+  const [greet, setGreet] = useState("a-about");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setGreet("contact");
+    }, 2000);
+  });
   return (
-    <div className="recent-work">
-      <GreetingStyled className="gsst" pageName={"Work"}></GreetingStyled>
+    <div className={greet}>
+      <GreetingStyled className="gss" pageName={"Work"}></GreetingStyled>
       <div className="recent-w">
         <Header></Header>
         <div className="projects-section">

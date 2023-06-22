@@ -213,7 +213,7 @@ tr {
   /* position: absolute; */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .about-me {
     font-size: 1.2rem;
   }
@@ -245,7 +245,7 @@ tr {
   }
 
   .i-skills {
-    height: 200vh;
+    height: 130vh;
   }
   .i-skills-image {
     width: 0;
@@ -270,5 +270,15 @@ tr {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .front-end {
+    margin-top: 17vh;
+    height: 45vh;
+  }
+  .back-end {
+    height: 45vh;
+  }
+  .deployment {
+    height: 45vh;
   }
 }

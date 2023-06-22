@@ -1,4 +1,5 @@
 import "./Contact.css";
+import { useEffect, useState } from "react";
 
 import From from "./../form/Form";
 import Header from "./../header/Header";
@@ -7,9 +8,17 @@ import GreetingStyled from "./../Greeting/GreetingStyled";
 import img from "../../Assets/Images/proper1-min.png";
 
 const Contact = () => {
+  const [visible, setVisible] = useState("a-about");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setVisible("contact");
+    }, 2000);
+  });
+
   return (
-    <div className="contact">
-      <GreetingStyled className="gs" pageName={"Contact"}></GreetingStyled>
+    <div className={visible}>
+      <GreetingStyled className="gss" pageName={"Contact"}></GreetingStyled>
       <div className="contacts">
         <Header></Header>
 

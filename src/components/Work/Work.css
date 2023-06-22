@@ -9,14 +9,18 @@
   /* width: 100vw; */
   /* margin-left: 10vw;
   margin-right: 10vw; */
-  /* height: 100vh; */
-  position: fixed;
+  /* height: 150vh; */
+
+  /* position: fixed; */
+
   z-index: 59;
 }
 .recent-w {
 }
 .projects-section {
   width: 100vw;
+  height: fit-content;
+  padding-bottom: 2em;
   font-size: 4rem;
   display: flex;
   align-items: center;

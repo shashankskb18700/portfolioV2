@@ -6,7 +6,7 @@ const Header = () => {
     <div className="top">
       <Link to="/" className="name">
         {" "}
-        Shashank shekhar.
+        Shashank Shekhar.
       </Link>
       <div className="links">
         {/* <Link to="/">Home</Link> */}
