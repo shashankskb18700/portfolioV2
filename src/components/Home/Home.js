@@ -41,6 +41,7 @@ const Home = () => {
           <Link to="/cc">
             <div className="cc">Competitive Coder</div>
           </Link>
+
           {/* <div>
               <Graph
                 id="graph-id" // id is mandatory

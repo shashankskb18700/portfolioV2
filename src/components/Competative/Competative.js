@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import Header from "./../header/Header";
 
-import Video from "./../../Assets/video/cc3compresed.mp4";
+import Video from "./../../Assets/video/cc3compresed (1).mp4";
 
 import RatingCard from "./RatingCard/RatingsCard";
 

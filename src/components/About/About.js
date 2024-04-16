@@ -3,6 +3,10 @@ import { useState, useEffect } from "react";
 
 import { ReactComponent as Heroku } from "./../../Assets/svg/heroku-icon.svg";
 
+import { ReactComponent as LaptopCode } from "./../../Assets/svg/laptopCode.svg";
+
+import { ReactComponent as Server } from "./../../Assets/svg/server-svgrepo-com.svg";
+import { ReactComponent as Deployment } from "./../../Assets/svg/cloud-arrow-up-fill-svgrepo-com.svg";
 import img1 from "./../../Assets/Images/blackand white.png";
 
 import Header from "./../header/Header";
@@ -23,7 +27,7 @@ const About = () => {
       <div className="abouts">
         <Header></Header>
         <div className="i-intro">
-          <div
+          {/* <div
             className="img1"
             style={
               {
@@ -34,7 +38,8 @@ const About = () => {
                 // backgroundSize: "100vh 66vh",
               }
             }
-          ></div>
+          ></div> */}
+          <img src={img1} className="img1"></img>
           <div className="about-me">
             I am Shashank Shekhar, a 4th year student at Chandigarh University.
             I'm pursuing 'Bachelor of Engineering in Computer Science (With
@@ -117,11 +122,8 @@ const About = () => {
                   </tr>
                 </td>
               </div>
-              <div className="i-skills-image skills-f">
-                <i
-                  className="fa-solid fa-laptop-code fa-2xl"
-                  style={{ color: "#7211ef" }}
-                ></i>
+              <div className="skills-f">
+                <LaptopCode className="skills-f"></LaptopCode>
               </div>
             </div>
           </div>
@@ -173,11 +175,8 @@ const About = () => {
                   </tr>
                 </td>
               </div>
-              <div className="i-skills-image skills-b">
-                <i
-                  class="fa-solid fa-server fa-2xl"
-                  style={{ color: "#9bf57a", width: "100%" }}
-                ></i>
+              <div className="skills-b">
+                <Server className="skills-f"></Server>
               </div>
             </div>
           </div>
@@ -214,9 +213,7 @@ const About = () => {
                   </tr>
                 </td>
               </div>
-              <div className="i-skills-image skills-d">
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-              </div>
+              <Deployment className="skills-f"></Deployment>
             </div>
           </div>
         </div>

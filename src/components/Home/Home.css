@@ -144,10 +144,10 @@
   /* z-index: 1; */
 }
 .competitive div {
-  font-size: 9rem;
+  font-size: 10rem;
   text-align: start;
-  width: 78%;
-  display: flex;
+  width: 0%;
+  display: inline-block;
 }
 .cc {
   mix-blend-mode: difference;
@@ -184,12 +184,9 @@
   width: 50%;
   height: 100%;
   font-size: 10rem;
-  /* -webkit-text-fill-color: red; */
-  /* -webkit-text-stroke: 2px rgb(0, 0, 0); */
+
   mix-blend-mode: difference;
 
-  /* background-image: url("../../Assets/Images/Screenshot\ 2023-03-16\ at\ 5.50.23\ PM.png"); */
-  /* background: url("../../Assets/Images/94a51f_1ac5008965df4bc68bf1584d6436a52f_mv2.webp"); */
   display: flex;
   justify-content: right;
   align-items: center;
@@ -201,31 +198,17 @@
   /* transform: skew(-46deg); */
 
   background-size: cover;
-
-  /* clip-path: polygon(0 35%, 33% 0, 100% 0, 100% 100%, 0% 100%); */
-  /* z-index: ; */
 }
 .webD div {
-  /* transform: skew(46deg); */
-  font-size: 9rem;
+  font-size: 10rem;
   text-align: end;
   width: 78%;
-  display: flex;
+  display: inline;
 }
 .webD :hover {
   color: rgb(164, 227, 105);
 }
-/* 
-.graphSvg {
-  position: absolute;
-  background-color: red;
-  z-index: -100;
-} */
-/* 
-svg {
-  z-index: -4;
-  position: relative;
-} */
+
 .bubble {
   z-index: -4;
   position: absolute;
@@ -536,7 +519,7 @@ svg {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1450px) {
   .webD div {
     font-size: 15rem;
   }

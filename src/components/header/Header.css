@@ -2,7 +2,6 @@
   background: linear-gradient(
     90deg,
     rgb(170, 102, 102) 0%,
-    rgba(255, 255, 255, 0.921) 35%,
     rgba(0, 212, 255, 1) 100%,
     rgb(178, 179, 250) 100%,
     rgb(0, 255, 55) 100%,
@@ -21,12 +20,12 @@
   50% {
     background-position: right;
   }
-  /* 75% {
+  75% {
     background-position: top;
-  } */
+  }
 
   100% {
-    background-position: left;
+    background-position: bottom;
   }
 }
 
